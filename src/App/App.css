@@ -1,0 +1,12 @@
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--background-app);
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;
+    background-color: #464646; 
+    overflow: hidden;
+}

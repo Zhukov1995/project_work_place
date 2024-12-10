@@ -1,0 +1,23 @@
+.wrapper {
+    width: 320px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-theme-bg);
+    border-radius: 5px;
+    position: absolute;
+    right: 5px;
+    bottom: 465px;
+    z-index: 5;
+}
+
+.content {
+    width: 85%;
+    padding: 5px 0px;
+}
+
+.title {
+    text-align: center;
+    color: var(--main-theme-color);
+}

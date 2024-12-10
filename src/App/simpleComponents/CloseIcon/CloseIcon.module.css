@@ -1,0 +1,12 @@
+.svg {
+    border-radius: 2px;
+}
+
+.rect {
+    fill: var(--main-theme-bg);
+    transition: 0.2s;
+}
+
+.rect:hover {
+    fill: var(--red);
+}

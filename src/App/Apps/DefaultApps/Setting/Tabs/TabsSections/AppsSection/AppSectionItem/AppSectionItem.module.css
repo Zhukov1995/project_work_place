@@ -1,0 +1,27 @@
+.list-item {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--main-theme-bg);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.list-item img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.list-item input {
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 5px);
+    cursor: pointer;
+}

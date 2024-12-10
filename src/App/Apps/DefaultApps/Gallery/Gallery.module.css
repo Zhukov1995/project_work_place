@@ -1,0 +1,39 @@
+.wrapper {
+    width: 100%;
+    height: calc(100% - 20px);
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    margin: 0 auto;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+.wrapper::-webkit-scrollbar-track {
+  background: var(--main-theme-sub-bg);
+}
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--main-theme-bg); 
+}
+
+.btn-apply {
+    width: 200px;
+    height: 30px;
+    background-color: var(--main-theme-bg);
+    color: var(--main-theme-color);
+    position: absolute;
+    left: calc(50% - 100px);
+    bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-apply:hover {
+    background-color: var(--main-theme-hover-color);
+}

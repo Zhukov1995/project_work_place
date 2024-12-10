@@ -1,0 +1,17 @@
+.wrapper {
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-theme-bg);
+    border-radius: 5px;
+    position: absolute;
+    right: 5px;
+    bottom: 60px;
+    z-index: 5;
+}
+
+.caption, .head, .row {
+    color: white;
+}

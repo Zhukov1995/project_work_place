@@ -1,0 +1,9 @@
+.wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+    right: 55px;
+    cursor: pointer;
+}

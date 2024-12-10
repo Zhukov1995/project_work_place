@@ -1,0 +1,14 @@
+.wrap {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    transition: 0.2s;
+    background-color: var(--main-theme-bg);
+}
+
+.wrap:hover {
+    background-color: var(--main-theme-sub-bg);
+}

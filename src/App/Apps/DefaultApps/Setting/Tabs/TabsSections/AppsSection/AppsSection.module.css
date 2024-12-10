@@ -1,0 +1,50 @@
+.title {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid var(--main-theme-bg);
+}
+
+.content {
+    padding: 5px;
+    height: calc(100% - 25px);
+    overflow-y: auto;
+}
+
+.content::-webkit-scrollbar {
+  width: 6px;
+}
+.content::-webkit-scrollbar-track {
+  background: var(--main-theme-sub-bg);
+}
+.content::-webkit-scrollbar-thumb {
+  background-color: var(--main-theme-bg); 
+}
+
+.system {}
+
+.install, .develop {
+    margin: 10px 0px;
+}
+
+.system-list, 
+.install-list, 
+.develop-list {
+    font-size: 13px;
+}
+
+.btn-setting{
+    width: 100%;
+    max-width: 500px;
+    height: 25px;
+    background-color: var(--main-theme-bg);
+    border: none;
+    border-radius: 5px;
+    color: var(--main-theme-color);
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 10px 0px;
+}
+
+.btn-setting:hover {
+    background-color: var(--main-theme-hover-color);
+}

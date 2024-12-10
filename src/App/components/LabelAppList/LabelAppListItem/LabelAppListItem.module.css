@@ -1,0 +1,27 @@
+.label-app {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.label-app:hover {
+    background-color: rgba(65, 65, 65, 0.44)
+}
+
+.label-app-img {
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.label-app-title {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    word-wrap: break-word;
+}

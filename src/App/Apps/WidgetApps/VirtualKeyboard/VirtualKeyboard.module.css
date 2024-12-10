@@ -1,0 +1,35 @@
+.wrapper {
+    width: 800px;
+    height: 275px;
+    border-radius: 5px;
+    background-color: var(--main-theme-bg);
+    padding: 5px;
+    position: absolute;
+    bottom: 55px;
+    right: calc(50% - 400px);
+    z-index: 10;
+    border: 1px solid var(--main-theme-sub-bg);
+}
+
+.content {
+    position: relative;
+}
+
+.wrapper-close {
+    position: absolute;
+    right: 0px;
+    top: 4px;
+}
+
+.input {
+    display: block;
+    width: 600px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    pointer-events: none;
+    border: none;
+    
+}

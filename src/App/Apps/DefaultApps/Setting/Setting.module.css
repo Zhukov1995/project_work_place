@@ -1,0 +1,6 @@
+.setting {
+    width: 100%;
+    height: calc(100% - 20px);
+    display: flex;
+    justify-content: start;
+}

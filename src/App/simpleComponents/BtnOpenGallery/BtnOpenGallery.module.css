@@ -1,0 +1,14 @@
+.button {
+    height: 25px;
+    margin-top: 5px;
+    background-color: var(--main-theme-bg);
+    border: none;
+    border-radius: 5px;
+    color: var(--main-theme-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: var(--main-theme-hover-color);
+}

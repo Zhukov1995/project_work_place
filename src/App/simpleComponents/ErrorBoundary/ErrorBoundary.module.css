@@ -1,0 +1,12 @@
+.container { 
+    width: 100%;
+    height: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert {
+    text-align: center;
+    font-size: 15px;
+}

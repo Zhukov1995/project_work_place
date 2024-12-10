@@ -1,0 +1,94 @@
+.title {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid var(--main-theme-bg);
+}
+
+.content {
+    padding: 5px;
+    height: calc(100% - 25px);
+    overflow-y: auto;
+}
+
+.controls {}
+
+.content::-webkit-scrollbar {
+  width: 6px;
+}
+.content::-webkit-scrollbar-track {
+  background: var(--main-theme-sub-bg);
+}
+.content::-webkit-scrollbar-thumb {
+  background-color: var(--main-theme-bg); 
+}
+
+.wrap-control {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 5px 0px;
+    font-size: 13px;
+}
+
+.wrap-control select {
+    margin-top: 5px;
+    background-color: var(--main-theme-bg);
+    color: var(--main-theme-color);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.wrap-control select:focus {
+    outline: none;
+}
+
+.wrap-control input {
+    margin-top: 5px;
+    display: block;
+    padding: 5px;
+    background-color: var(--main-theme-bg);
+    color: var(--main-theme-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.background {
+    width: 100%;
+    max-width: 500px;
+    min-height: 250px;
+    background: var(--background-app);
+    background-size: cover;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.btn-apply {
+    height: 25px;
+    background-color: var(--main-theme-bg);
+    border: none;
+    border-radius: 5px;
+    color: var(--main-theme-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-apply:hover {
+    background-color: var(--main-theme-hover-color);
+}
+
+.btn-reset {
+    height: 25px;
+    margin-top: 5px;
+    background-color: var(--main-theme-bg);
+    border: none;
+    border-radius: 5px;
+    color: var(--main-theme-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-reset:hover {
+    background-color: var(--red);
+}

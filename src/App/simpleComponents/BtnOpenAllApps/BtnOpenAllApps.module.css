@@ -1,0 +1,16 @@
+.wrapper {
+    height: 100%;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--main-theme-sub-bg);
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color:  var(--main-theme-sub-bg);
+    cursor: pointer;
+}

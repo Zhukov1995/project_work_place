@@ -1,0 +1,20 @@
+.task-list-item {
+    width: 35px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.task-list-app {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.task-list-circle {
+    height: 5px;
+    border-radius: 25px;
+    background-color: var(--main-theme-icon);
+    margin: 0 auto;
+    margin-top: -2px;
+}

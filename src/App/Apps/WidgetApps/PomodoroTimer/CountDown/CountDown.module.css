@@ -1,0 +1,30 @@
+.wrapper {
+    text-align: center;
+}
+
+.wrapper p {
+    margin: 10px;
+    font-size: 18px;
+    color: var(--main-theme-color);
+}
+
+.wrapper-button {
+    margin: 0 auto;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-button button {
+    width: 100px;
+    height: 20px;
+    background-color: var(--main-theme-sub-bg);
+    color: var(--main-theme-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wrapper-button button:hover {
+    background-color: var(--main-theme-hover-color);
+}

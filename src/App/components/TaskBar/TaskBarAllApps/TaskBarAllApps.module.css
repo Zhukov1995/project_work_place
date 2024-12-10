@@ -1,0 +1,14 @@
+.wrapper {
+    width: 500px;
+    height: 555px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    border-radius: 5px;
+    background-color: var(--main-theme-bg);
+    position: absolute;
+    bottom: 60px;
+    left: 5px;
+    padding: 10px;
+    z-index: 5;
+}
