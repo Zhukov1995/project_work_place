@@ -1,0 +1,54 @@
+.wrapper {
+    width: 100%;
+    background-color: var(--main-theme-sub-bg);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.wrapper:not(:first-child) {
+    margin-top: 5px;
+}
+
+.title {
+    border-bottom: 1px solid var(--main-theme-bg);
+    font-weight: bold;
+    color: var(--main-theme-color);
+    padding: 5px;
+}
+
+.text {
+    padding: 5px;
+    color: var(--main-theme-color);
+    overflow: hidden;
+}
+
+.footer {
+    height: 25px;
+    border-top: 1px solid var(--main-theme-bg);
+    background-color: var(--main-theme-sub-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.visible {
+    transform: rotate(90deg);
+}
+
+.hidden {
+    transform: rotate(-90deg);
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-theme-bg);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}

@@ -1,14 +1,17 @@
 .wrapper {
     width: 100%;
-    min-height: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--main-theme-bg);
     border-radius: 5px;
+    padding: 10px;
     z-index: 5;
 }
 
-.caption, .head, .row {
-    color: white;
+.wrapper p {
+    margin: 10px;
+    font-size: 18px;
+    color: var(--main-theme-color);
 }

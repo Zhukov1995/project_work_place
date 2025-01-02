@@ -18,7 +18,7 @@ export interface IModal {
 
 export interface IinitialState {
     isAllAppsOpen: boolean,
-    isCalendarOpen: boolean,
+    isWidgetPanelOpen: boolean,
     isVirtualKeyboardOpen: boolean,
     isFullscreenApp: boolean,
     isOpenTaskBar: boolean,

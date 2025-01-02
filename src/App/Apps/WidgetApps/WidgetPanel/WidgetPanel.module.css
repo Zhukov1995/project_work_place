@@ -1,0 +1,23 @@
+.wrapper {
+    width: 320px;
+    max-height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 60px;
+    right: 5px;
+    z-index: 5;
+    overflow: auto;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+.wrapper::-webkit-scrollbar-track {
+    background: var(--main-theme-sub-bg);
+}
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--main-theme-bg); 
+}

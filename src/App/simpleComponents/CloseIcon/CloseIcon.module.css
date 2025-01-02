@@ -5,6 +5,7 @@
 .rect {
     fill: var(--main-theme-bg);
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .rect:hover {

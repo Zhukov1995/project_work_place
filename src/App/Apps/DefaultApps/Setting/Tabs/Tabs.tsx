@@ -5,7 +5,13 @@ import TabContent from "./TabsContent/TabContent";
 
 const Tabs = () => {
     const [selectedTab, setSelectedTab] = useState<number>(0);
-    const tabs = ['Дисплей', 'Приложения', 'Тема', 'О продукте'];
+    const tabs = [
+        'Дисплей',
+        'Приложения',
+        'Тема',
+        'Язык и регион',
+        'О продукте'
+    ];
 
     const handleTabClick = (index: number) => {
         setSelectedTab(index);

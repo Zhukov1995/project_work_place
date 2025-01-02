@@ -1,4 +1,12 @@
-type keyStyle = 'background_app' | 'filter_app' | 'main_theme_bg' | 'main_theme_sub_bg' | 'main_theme_icon' | 'main_theme_icon' | 'main_theme_color' | 'main_theme_hover_color' | 'font_family'
+type keyStyle = 'background_app' 
+| 'filter_app' 
+| 'main_theme_bg' 
+| 'main_theme_sub_bg' 
+| 'main_theme_icon' 
+| 'main_theme_icon' 
+| 'main_theme_color' 
+| 'main_theme_hover_color' 
+| 'font_family'
 
 function getRootStyleValue(variable: string) {
     return getComputedStyle(document.body).getPropertyValue(variable);

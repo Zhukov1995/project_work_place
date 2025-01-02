@@ -7,25 +7,30 @@ import TaskBarAllApps from './components/TaskBar/TaskBarAllApps/TaskBarAllApps';
 
 import './App.css';
 import AuthPage from './pages/AuthPage/AuthPage';
+import { LoadingFallback } from './utils/fallback';
 
-const Calendar = lazy(() => import('./Apps/WidgetApps/Calendar/Calendar'));
-const PomodoroTimer = lazy(() => import('./Apps/WidgetApps/PomodoroTimer/PomodoroTimer'));
+const WidgetPanel = lazy(() => import('./Apps/WidgetApps/WidgetPanel/WidgetPanel'));
 const ModalViewController = lazy(() => import('./ModalViewController/ModalViewController'));
 
 
 function App(): JSX.Element {
   const parentRef = useRef(null);
 
+  window.onbeforeunload = function(event) {
+    const hasUnsavedChanges = true;
+    if (hasUnsavedChanges) {
+        const message = 'У вас есть несохраненные изменения. Вы уверены, что хотите покинуть страницу?';
+        event.returnValue = message; // Для совместимости с Chrome
+        return message; // Для других браузеров
+    }
+  };
+
   return (
     <div className="App" ref={parentRef}>
-
-      <Suspense fallback={<Loading />}>
-        <Calendar />
+      <Suspense fallback={<LoadingFallback />}>
+        <WidgetPanel />
       </Suspense>
-      <Suspense fallback={<Loading />}>
-        <PomodoroTimer />
-      </Suspense>
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<LoadingFallback />}>
         <ModalViewController parentRef={parentRef} />
       </Suspense>
       <LabelAppList />
@@ -38,8 +43,3 @@ function App(): JSX.Element {
 }
 
 export default App;
-
-
-const Loading = () => {
-  return null
-}

@@ -45,11 +45,11 @@ export const appList = [
         }
     },
     {
-        name: "Чат",
+        name: "RCM",
         id: 4,
         default: false,
-        component: 'TestNewApp',
-        logo: "https://e7.pngegg.com/pngimages/34/887/png-clipart-online-chat-computer-icons-livechat-conversation-others-logo-online-chat.png",
+        component: 'RcmApp',
+        logo: "https://play-lh.googleusercontent.com/9VnTD-QfNQUaDlEkey_BjsjYZGQFF3wefpxvc8b-ZIHFL8MnMC1vbu5RE-g0OsVDxQ",
         config: {
             isOpen: false,
             zIndex: 1,

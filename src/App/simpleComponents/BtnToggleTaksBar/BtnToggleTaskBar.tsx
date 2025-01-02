@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import { closeCalendar, toggleAllAppsOpen, toggleTaskBar } from "../../store/actions";
+import { closeWidgetPanel, toggleAllAppsOpen, toggleTaskBar } from "../../store/actions";
 import ArrowIcon from "../ArrowIcon/ArrowIcon";
 import { IinitialState } from "../../store/interfaces";
 
@@ -20,7 +20,7 @@ const BtnToggleTaksBar = () => {
 
     useEffect(() => {
         if (!valueBtn) {
-            dispatch(closeCalendar())
+            dispatch(closeWidgetPanel())
             if (valueBtnAllApps) {
                 dispatch(toggleAllAppsOpen())
             }

@@ -35,3 +35,12 @@
     right: 0;
     cursor: pointer;
 }
+
+.alert {
+    width: 100%;
+    height: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-theme-color);
+}

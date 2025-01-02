@@ -9,7 +9,6 @@ import TimerNotification from "./TimerNotification/TimerNotification";
 
 
 const PomodoroTimer = () => {
-    const valueCalendar = useSelector<IinitialState, boolean>(state => state.isCalendarOpen);
     const [copySelectValue, setCopySelectValue] = useState<number>(5);
     const [copyInputValue, setCopyInputValue] = useState<string>('');
     const [isTimerStart, setIsTimerStart] = useState<boolean>(false);
@@ -20,29 +19,8 @@ const PomodoroTimer = () => {
         setCopySelectValue(selectOriginal);
     }
 
-
-
-    const pomodorotimerAnimation = {
-        hidden: {
-            x: 350,
-            transition: {
-                delay: 0.2
-            },
-        },
-        visible: () => ({
-            x: 0,
-            transition: {
-                delay: 0.2
-            }
-        })
-    };
-
     return (
-        <motion.div
-            initial={'hidden'}
-            animate={valueCalendar ? 'visible' : 'hidden'}
-            variants={pomodorotimerAnimation}
-            className={style.wrapper}>
+        <div className={style.wrapper}>
             <div className={style.content}>
                 <p className={style.title}>Тайм менеджмент</p>
                 {!isTimerStart ?
@@ -65,7 +43,7 @@ const PomodoroTimer = () => {
                         text={copyInputValue} />
                     : null}
             </div>
-        </motion.div >
+        </div >
     );
 }
 

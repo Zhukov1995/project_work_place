@@ -1,0 +1,13 @@
+.title {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid var(--main-theme-bg);
+}
+
+.content {
+    padding: 5px;
+    height: calc(100% - 25px);
+    overflow-y: auto;
+    font-size: 13px;
+    line-height: 29px;
+}

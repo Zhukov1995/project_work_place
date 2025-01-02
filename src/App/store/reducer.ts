@@ -6,7 +6,7 @@ import { IinitialState } from "./interfaces";
 
 const initialState: IinitialState = {
     isAllAppsOpen: false,
-    isCalendarOpen: false,
+    isWidgetPanelOpen: false,
     isVirtualKeyboardOpen: false,
     isFullscreenApp: false,
     isOpenTaskBar: true,
@@ -24,9 +24,9 @@ const reducer = (state = initialState, action: any) => {
         case type.TOGGLE_TASK_BAR:
             return { ...state, isOpenTaskBar: !state.isOpenTaskBar }
 
-        case type.TOGGLE_CALENDAR: {
+        case type.TOGGLE_WIDGET_PANEL: {
             if (state.isOpenTaskBar) {
-                return { ...state, isCalendarOpen: !state.isCalendarOpen }
+                return { ...state, isWidgetPanelOpen: !state.isWidgetPanelOpen }
             } else {
                 return state
             }
@@ -35,8 +35,8 @@ const reducer = (state = initialState, action: any) => {
         case type.TOGGLE_All_APPS_OPEN:
             return { ...state, isAllAppsOpen: !state.isAllAppsOpen }
 
-        case type.CLOSE_CALENRAR:
-            return { ...state, isCalendarOpen: false }
+        case type.CLOSE_WIDGET_PANEL:
+            return { ...state, isWidgetPanelOpen: false }
 
         case type.SET_ID_TARGET_MODAL:
             return { ...state, targetModal: action.payload }

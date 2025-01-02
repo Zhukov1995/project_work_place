@@ -24,6 +24,7 @@ const Modal = ({ children, parentRef, app }: ITargetModal) => {
         y: window.innerHeight / 2 - (modalSize.height / 2)
     });
     const [isOpenModalConfig, setIsOpenModalConfig] = useState<boolean>(false);
+    const [isDragStart, setIsDragStart] = useState<boolean>(false);
 
     const controls = useDragControls();
     const headRef = useRef(null);
@@ -61,6 +62,7 @@ const Modal = ({ children, parentRef, app }: ITargetModal) => {
         const x = position.left;
         const y = position.top;
         setModalPosition({ x, y });
+        setIsDragStart(false);
         console.log('Действие "Запись текущей позиции" опубликованно');
     }
 
@@ -97,6 +99,7 @@ const Modal = ({ children, parentRef, app }: ITargetModal) => {
             dragElastic={0}
             dragMomentum={false}
             dragControls={controls}
+            onDragStart={(e) => setIsDragStart(true)}
             onDragEnd={(e) => dragEnd(e)}
             dragListener={false}
             whileTap={{ zIndex: 2 }}
@@ -118,7 +121,19 @@ const Modal = ({ children, parentRef, app }: ITargetModal) => {
                     <CloseIcon click={() => dispatch(closeModal(app.id))} />
                 </div>
             </div>
-            {children && children}
+            {children &&
+                <div style={{
+                    display: isDragStart? 'none' : 'block',
+                    height: '100%'
+                    }}>
+                    {children}
+                </div>
+            }
+            {isDragStart &&
+                <div className={style.alert}>
+                    <p>Перемещение окна...</p>
+                </div>
+            }
             {isOpenModalConfig && !app.config.fullscreen
                 &&
                 <PositionController

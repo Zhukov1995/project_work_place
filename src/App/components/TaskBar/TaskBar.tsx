@@ -8,7 +8,7 @@ import { IinitialState } from "../../store/interfaces";
 
 import style from "./TaskBar.module.css";
 import FullscreenAppIcon from '../../simpleComponents/FullscreenAppIcon/FullscreenAppIcon';
-import CalendarIcon from '../../simpleComponents/CalendarIcon/CalendarIcon';
+import CalendarIcon from '../../simpleComponents/WidgetPanelIcon/WidgetPanelIcon';
 import BtnOpenAllApps from '../../simpleComponents/BtnOpenAllApps/BtnOpenAllApps';
 import KeyboardIcon from '../../simpleComponents/KeyboardIcon/KeyboardIcon';
 import { toggleKeyboard } from '../../store/actions';

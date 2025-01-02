@@ -50,7 +50,6 @@ var images = [
     "https://i.pinimg.com/originals/4c/b6/bc/4cb6bcbb863017f2f702e5fe07becaf1.jpg",
     "https://i.pinimg.com/originals/5d/e2/42/5de24294bad21ec99931f4c362354f22.jpg",
     "https://static-cse.canva.com/blob/759807/vk1776.png",
-    "https://news.microsoft.com/wp-content/uploads/prod/sites/46/2021/10/Windows-11-Bloom-Screensaver-Dark-1600x900-1.jpg",
     "https://lh3.googleusercontent.com/pw/AP1GczO9ATJA1atHU61H5bQcefooODtSyBsllLO1tOzAO71ozb1q3zvmih2llJz7y6C2svZ6cVCHTtrj0l5KeSYrh2SewHEHaljno-QB6jFxlTM_Wj1lREjkqfRQKquO2l1r1IpyhefMWDOeBpDrHAFv8N6d=w1645-h925-s-no-gm?authuser=0",
     "https://lh3.googleusercontent.com/pw/AP1GczO_veAH8PzXvp3izkQqgLnyVAl2tlOqaG3WKbN0vnQHXVLOYrICevWVxTfdqeaw3oiiYuc0qunyq693dbsQT6Nv4Ns3w4z8vdQg1HojsqeeLKgu8AjnG7lL9hsHxlqQMxi5ssT06gvJJ3ciMFg2eQYB=w1645-h925-s-no-gm?authuser=0",
     "https://wallpaperswide.com/download/earth_8-wallpaper-1280x768.jpg",
